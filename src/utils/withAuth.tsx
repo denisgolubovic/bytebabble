@@ -11,8 +11,9 @@ type WrappedComponentProps = {
  * signed in.
  * @param WrappedComponent
  */
-const withAuth = (WrappedComponent: React.ComponentType) => {
-    const WithAuthComponent: React.FC = (props) => {
+
+const withAuth = <P extends {}>(WrappedComponent: React.ComponentType<P>) => {
+    const WithAuthComponent: React.FC<P> = (props) => {
         const { isLoaded, isSignedIn } = useUser();
         const router = useRouter();
 
