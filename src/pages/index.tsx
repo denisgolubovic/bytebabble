@@ -5,6 +5,10 @@ import PublicContent from '@/components/PublicContent';
 import { useUser } from '@clerk/nextjs';
 import {useRouter} from "next/router";
 
+/**
+ * Redirects the user to /dashboard if signed in, otherwise we show the PublicContent component.
+ * @constructor
+ */
 const HomePage: React.FC = () => {
     const { isLoaded, isSignedIn } = useUser();
     const router = useRouter();

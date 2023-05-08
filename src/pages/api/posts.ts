@@ -1,6 +1,9 @@
 import {sql} from "@vercel/postgres";
 import {Post} from "@/interfaces/Post";
 
+/**
+ * Fetch posts from the database (Vercel Postgres)
+ */
 export async function fetchPosts() {
     try {
         const {rows, fields} = await sql`SELECT * FROM Posts;`;
@@ -10,6 +13,11 @@ export async function fetchPosts() {
         return [];
     }
 }
+
+/**
+ * Creates a new Blog post with the given input
+ * @param post Post type
+ */
 
 export async function createPost(post: Post): Promise<void> {
     try {
@@ -21,6 +29,10 @@ export async function createPost(post: Post): Promise<void> {
     }
 }
 
+/**
+ * This method seeds the database if the required data is not already existing.
+ * It also creates two dummy blog posts which should be shown on your dashboard.
+ */
 async function seed() {
     try {
         // Check if the "Posts" table exists

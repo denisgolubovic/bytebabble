@@ -13,6 +13,12 @@ interface DashboardProps {
     posts: Post[];
 }
 
+/**
+ * Shows the user dashboard for signed in users.
+ * TODO: Redirect/guard from non signed in users. We now only see an empty page
+ * @param posts
+ * @constructor
+ */
 const Dashboard: React.FC<DashboardProps> = ({posts}) => {
     return (
         <>

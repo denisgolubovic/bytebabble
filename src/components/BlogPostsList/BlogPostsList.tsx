@@ -5,6 +5,7 @@ import PostsList from '@/components/PostsList';
 interface BlogPostsListProps {
     posts: Post[];
 }
+//TODO: Add events from server with webhooks or similar to update whenever we get a new blog post to the database.
 
 const BlogPostsList: React.FC<BlogPostsListProps> = ({posts}) => {
 

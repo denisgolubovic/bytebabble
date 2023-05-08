@@ -25,6 +25,10 @@ with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/
 - Node.js v18.x.x or later
 - npm 9.6.2 or later
 - Vercel with Vercel Postgres setup
+- Clerk account with the API-keys added to your .environment.local
+
+The goal is to deploy this in a production environment shortly which will allow for easier testing of the application.
+This project will also use [Vercel KV](https://vercel.com/docs/storage/vercel-kv) and events with webhooks or similar. 
 
 Start with ``npm install``
 
@@ -71,3 +75,10 @@ the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=
 from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### TODO feature list:
+- Improve the user experience...
+- Check how to configure Clerk sign out URL
+- Add Vercel KV and use in some fun way
+- Add event handling to auto update the dashboard with blogposts as soon as the database 'Posts' table is updated.
+- Clean up the code and add comments...
