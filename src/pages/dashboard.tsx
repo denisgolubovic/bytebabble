@@ -15,7 +15,6 @@ interface DashboardProps {
 
 /**
  * Shows the user dashboard for signed in users.
- * TODO: Redirect/guard from non signed in users. We now only see an empty page
  * @param posts
  * @constructor
  */
