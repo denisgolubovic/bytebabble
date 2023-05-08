@@ -1,7 +1,8 @@
-import {useState} from 'react'
+import React, {useState} from 'react'
 import {SignInButton, UserButton, useUser} from "@clerk/nextjs";
+import Image from "next/image";
 
-export default () => {
+const Navbar: React.FC =  () => {
 
     const [state, setState] = useState(false)
 
@@ -17,7 +18,7 @@ export default () => {
             <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
                 <div className="flex items-center justify-between py-3 md:py-5 md:block">
                     <a href="">
-                        <img
+                        <Image
                             src="/logo.svg"
                             width={120}
                             height={50}
@@ -73,3 +74,5 @@ export default () => {
         </nav>
     )
 }
+
+export default Navbar;

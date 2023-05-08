@@ -1,6 +1,6 @@
 import {SignInButton} from "@clerk/nextjs";
 
-export default () => {
+const Hero: React.FC = () => {
 
     return (
         <section className="mt-48 mx-auto max-w-screen-xl pb-4 px-4 sm:px-8 mb-24">
@@ -26,3 +26,5 @@ export default () => {
         </section>
     )
 }
+
+export default Hero;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from "@/components/Hero/Hero";
-import Features from "@/components/Features";
+import Features from "@/components/Features/Features";
 
 const PublicContent: React.FC = () => {
     return (

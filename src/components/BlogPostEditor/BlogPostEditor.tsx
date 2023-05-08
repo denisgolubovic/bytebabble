@@ -53,7 +53,7 @@ const BlogPostEditor: React.FC = () => {
                                     Create new post
                                 </h4>
                                 <p className="text-[15px] text-gray-600">
-                                    Let's inspire someone!
+                                    Lets inspire someone!
                                 </p>
                                 <form onSubmit={handleSubmit}>
                                     <div className="relative">
